@@ -8,7 +8,7 @@ exports.handler = async function (event) {
     query getAllGenres {
       reference_list (
         value: { label: "genre"},
-        options: { limit: ${JSON.stringify(limit)} }
+        options: { limit: ${JSON.stringify(20)} }
       ) {
         values {
           value

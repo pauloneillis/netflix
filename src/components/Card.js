@@ -10,14 +10,14 @@ const Card = ({ movie }) => {
       onMouseLeave={() => setIsShown(false)}
     >
       {!isShown && (
-        <video className="video" controls>
+        <video className="video">
           <source src={movie.thumbnail} type="video/mp4" />
         </video>
       )}
 
       {isShown && (
         <>
-          <video className="video" controls autoPlay={true} loop>
+          <video className="video" autoPlay={true} loop>
             <source src={movie.thumbnail} type="video/mp4" />
           </video>
           <div className="info-box">
@@ -30,3 +30,4 @@ const Card = ({ movie }) => {
 }
 
 export default Card
+

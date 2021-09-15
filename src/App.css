@@ -70,10 +70,10 @@ video {
   margin-bottom: 30px;
 }
 
-video::-webkit-media-controls {
-  display: none;
+video::-webkit-media-controls{
+    display: none;
+    -webkit-appearance: none;
 }
-
 .movie-section:focus-within .card,
 .movie-section:focus, .card {
   transform: translate(-25%);
@@ -143,4 +143,5 @@ li {
   z-index: 5;
   padding: 10px;
 }
+
 

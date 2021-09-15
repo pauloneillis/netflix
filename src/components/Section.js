@@ -43,3 +43,4 @@ const Section = ({ genre }) => {
 }
 
 export default Section
+

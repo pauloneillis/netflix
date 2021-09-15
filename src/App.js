@@ -18,8 +18,6 @@ const App = () => {
     setGenres(responseBody.data.reference_list.values)
   }
 
-  console.log(limit)
-
   useEffect(() => {
     fetchData()
   }, [limit])
@@ -46,3 +44,4 @@ const App = () => {
 }
 
 export default App
+
